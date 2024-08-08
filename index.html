@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Carisma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logistics">
+    <meta name="keywords" content="carisma, logistics, Freight, Customs Clearance">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/tabicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- jquery email -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .background-image-container {
+            background-image: url('img/map.png');
+            background-size: cover;
+            background-position: center;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 style="color: orange;" class="mb-1 text-uppercase">Carisma</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="#about-us" class="nav-item nav-link">About</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#Qoute" class="nav-item nav-link">Qoute</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a class="d-none d-lg-block" href="img/pdf/CARISMA-PROFILE.pdf" download="CARISMA-PROFILE.pdf" style="margin-right: 2rem;">
+                    <i class="fa fa-file-pdf text-danger me-1 "></i> <strong>PDF</strong>
+                </a>    
+            </div> 
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+        <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carismaslider1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics Solution</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4"><span class="text-primary">Carisma</span>, Place For Your Logistics Solution</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">You can trace your shipment at any time through this Tracking Option.</p>
+                                <a href="#Qoute" class="btn btn-primary py-md-2 px-md-5 me-3 animated slideInLeft" style="border-radius: 20px;">Tracking</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carismaslider2.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">OUR CLIENTS ARE OUR VALUABLE ASSET                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4"> <span class="text-primary">CARISMA </span> ADVANTAGES</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">CARISMA is specialized in international and domestic Air / Sea Freight forwarding business, handling both in bound and outbound traffic for FCL and LCL Shipments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div id="about-us" class="container-fluid overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="text-center text-lg-start wow fadeInLeft" data-wow-delay="0.1s">
+                        <h4 class="text-uppercase mb-3" style="color: orange;">About Us</h4>
+                        <h1 class="mb-5">CARISMA ALLOVER THE WORLD</h1>
+                        <p class="mb-5"><strong> CARISMA </strong> is specialized in international and domestic Air / Sea Freight forwarding business, handling both in bound and outbound traffic for FCL and LCL Shipments.
+                            We have established and maintained very close working relationships with all levels of Governments in Egypt & Turkey and major carriers which is focus on the same service as us.
+                                You will be working with a highly motivated team of professionals, who are young and energetic.</p>
+                        <div class="row g-4 mb-5">
+                            <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+                                <h5>Vision</h5>
+                                <p class="m-0">TO PROVIDE FORWARDING SERVICES OF EXCEPTIONAL QUALITY THAT SURPASS THE EXPECTATIONS OF OUR VALUED.</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <i class="fa fa-star fa-3x text-primary mb-3"></i>
+                                <h5>Mission</h5>
+                                <p class="m-0">OUR MISSION IS TO ESTABLISH LONG-TERM RELATIONSHIPS WITH OUR CUSTOMERS AND AGENTS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <img src="img/carismaLogo2.png" class="img-fluid mx-auto d-block" alt="Carisma Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 style="color: orange;" class="text-uppercase mb-3">Some Facts</h4>
+                    <h1 class="mb-5">BEST LOGISTICS</h1>
+                    <p class="mb-5">We provide the best logistic service on the market, all over the globe, Our support team are available 24/7 for your questions and needs, Our payment options makes it easy to use services anywhere and anytime, We provide scheduled delivery of time-sensitive packages.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                        <div class="ps-4">
+                            <h6>Call for any!</h6>
+                            <h3 class="text-primary m-0">+20 112 403 2592</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-6">
+                            <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-users fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">300</h2>
+                                <p class="text-white mb-0">Happy Clients</p>
+                            </div>
+                            <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-ship fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">820</h2>
+                                <p class="text-white mb-0">Complete Shipments</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-star fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">900</h2>
+                                <p class="text-white mb-0">Customer Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div id="service" class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="text-uppercase" style="color: orange;">Our Services</h4>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Air Freight</h4>
+                        <p>Our Satisfied Customers Appreciate the Fact That We Place So Much Emphasis on Exceeding Their Expectations in Customer Satisfaction by Providing Them with a Memorable Freight Service Experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Inland Freight</h4>
+                        <p>We Are Committed to Fulfilling All of Our Customers' Wants and Needs, Both Domestically and Internationally. Our Diverse Range of Services Includes Final Destination Delivery as Well as the Option to Use Our Services as a Multimodal Mode.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-4.jpeg" alt="">
+                        </div>
+                        <h4 class="mb-3">Sea Freight</h4>
+                        <p>Seamless global shipping solutions. We offer reliable and cost-effective sea freight services, handling everything from customs clearance to door-to-door delivery</p>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            </div>
+                            <h4 class="mb-3">Customs Clearance</h4>
+                            <p>The Key to Excellent Customs Clearance Is Not Just Releasing the Cargo, but Also Considering How, When, and How Much to Release. What Sets Us Apart in the Field of Customs Is Our Meticulous Attention to the Decisive Factor "Time"</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/service-5.jpeg" alt="">
+                            </div>
+                            <h4 class="mb-3">Import/Export</h4>
+                            <p>Seamless global trade solutions. We offer comprehensive import/export services, including customs clearance, documentation, and logistics, to ensure smooth and efficient cross-border transactions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/service-6.jpg" alt="">
+                            </div>
+                            <h4 class="mb-3">Trading</h4>
+                            <p>Global trade made easy. Our trading services connect you with international markets, offering expertise in sourcing, procurement, and logistics to maximize your business potential.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container feature py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="text-uppercase mb-3" style="color: orange;">CARISMA ADVANTAGES</h4>
+                    <h6 class="mb-5">Egypt Is Strategically Located on the World Map, Connecting Countries from All Directions. This Unique Location Greatly Benefits Us, as It Allows Us to Effectively Extend Our Power to All the Egyptian Ports, Which Are at the Heart of Egypt.</h6>
+                    <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
+                        <div class="ms-4">
+                            <h5>Worldwide Service</h5>
+                            <p class="mb-0">We’re Here to Not Only Meet Your Ever-Evolving Needs but to Exceed Expectations.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-ship text-primary fa-3x flex-shrink-0"></i>
+                        <div class="ms-4">
+                            <h5>On Time Delivery</h5>
+                            <p class="mb-0">To Provide Forwarding Services of Exceptional Quality That Surpass the Expectations of Our Valued Customers and Agents.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                        <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
+                        <div class="ms-4">
+                            <h5>24/7 Telephone Support</h5>
+                            <p class="mb-0">Our Mission Is to Establish Long-Term Relationships with Our Customers and Agents to Provide Outstanding Service and Support.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100% h-100" src="img/37.PNG" style="object-fit: contain; border-radius: 20px;" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+     
+    <!-- search Start -->
+    <div id="Qoute" class="background-image-container">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h4 style="color: orange;" class="text-uppercase">Tracking</h4>
+                <form action="https://www.track-trace.com/bol" method="post" id="bolform" name="bolform" target="_top" class="form-track jq-form-multi">
+                    <h1>Track Your Shipment</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control trackid" name="number" placeholder="ENTER YOUR SHIPMENT ID">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default trackingbutton" name="Track"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                            <input type="hidden" name="page" id="page" value="full">
+                            <input type="hidden" name="options" id="options" value="">
+                            <input type="hidden" name="v" id="v" value="F">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- search End -->
+
+<!-- Quote Start -->
+<div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h4 style="color: orange;" class="text-uppercase mb-3">Get A Quote</h4>
+                <h1 class="mb-5">Request A Free Quote!</h1>
+                <p class="mb-5">Best Is Always Ready to Go, but the Best Way to Get Us Pointed in the Right Direction for Your Challenge Is to Start a Conversation. Fill Out the Form Below to Give Us Some Details About Your Needs, or Pick Up the Phone and Call Us.</p>
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                    <div class="ps-4">
+                        <h5>Unsure of where to start? </h5>
+                        <p>Give us a call at</p>
+                        <h4 class="text-primary m-0">+20 112 403 2592</h4>
+                        <h4 class="text-primary m-0">+20 114 363 5031</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="text-center p-5 wow fadeIn" data-wow-delay="0.5s" style="border-radius: 50px;">
+                    <form id="quoteForm">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0 name-input" placeholder="Your Name" style="height: 55px; border-radius: 20px;" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0 email-input" placeholder="Your Email" style="height: 55px; border-radius: 20px">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0 input-phone" placeholder="Your Mobile" style="height: 55px; border-radius: 20px" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select border-0 input-cat" style="height: 55px; border-radius: 20px">
+                                    <option selected>Select A Service</option>
+                                    <option value="Sea Freight">Sea Freight</option>
+                                    <option value="Air Freight">Air Freight</option>
+                                    <option value="Inland Freight">Inland Freight</option>
+                                    <option value="Customs Clearance">Customs Clearance</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0 input-msg" placeholder="Special Note" style="border-radius: 20px"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary w-100 py-3 btn-contact-form" style="border-radius: 20px;">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".btn-contact-form").on("click", function () {
+    var name = $(".name-input").val();
+    var email = $(".email-input").val();
+    var mobile = $(".input-phone").val();
+    var freight = $(".input-cat").val();
+    var note = $(".input-msg").val();
+
+    if (!name || !mobile || freight === 'Select A Freight') {
+        alert('Please fill out all required fields.');
+        return;
+    }
+
+    var link = 'mailto:Info@carismalogistics.com?subject=Request for a Quote'
+    + '&body=Name: ' + name
+    + '%0AEmail: ' + email
+    + '%0APhone: ' + mobile
+    + '%0ACategory: ' + freight
+    + '%0ASpecial Note: ' + note;
+
+    window.location.href = link;
+        });
+    });
+</script>
+
+
+
+<!-- Quote End -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Team Start -->
+
+    <!-- Team End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- PARTNARS Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="text-center">
+                <h1 class="mb-0">CARISMA <strong style="color: orange;" class="text-uppercase"> PARTNERS  </strong></h1>
+                <p> Building Strong Relationships for Mutual Success. </p>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/1.jpg" alt="Logo 1">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/2.png" alt="Logo 2">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/3.png" alt="Logo 3">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/4.png" alt="Logo 4">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/5.jpg" alt="Logo 5">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/6.png" alt="Logo 6">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/7.png" alt="Logo 7">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/8.png" alt="Logo 8">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/9.png" alt="Logo 9">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/10.png" alt="Logo 10">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/11.png" alt="Logo 11">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/12.png" alt="Logo 12">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/13.png" alt="Logo 13">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/14.png" alt="Logo 14">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/15.jpg" alt="Logo 15">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/16.png" alt="Logo 16">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/17.png" alt="Logo 17">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/18.png" alt="Logo 18">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/19.png" alt="Logo 19">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/20.png" alt="Logo 20">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/21.jpg" alt="Logo 21">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/22.png" alt="Logo 22">
+                </div>
+                    
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/23.PNG" alt="Logo 23">
+                </div>
+
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/partner/24.jpg" alt="Logo 24">
+                </div>
+                        
+        </div>
+    </div>
+    <!-- PARTNARS End -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- PARTNARS Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="text-center">
+                <h1 class="mb-0">CARISMA <strong style="color: orange;" class="text-uppercase"> NETWORK  </strong></h1>
+                <p> A Global Network for Growth and Success. </p>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/1.svg" alt="Logo 1">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/2.svg" alt="Logo 2">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/3.svg" alt="Logo 3">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/4.svg" alt="Logo 4">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/5.svg" alt="Logo 5">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/6.svg" alt="Logo 6">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/7.svg" alt="Logo 7">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/8.svg" alt="Logo 8">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/9.svg" alt="Logo 9">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/10.svg" alt="Logo 10">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/11.svg" alt="Logo 11">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/12.svg" alt="Logo 12">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/13.svg" alt="Logo 13">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/14.svg" alt="Logo 14">
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <img class="img-fluid" src="img/network/15.svg" alt="Logo 15">
+                </div>
+            </div>
+            
+                        
+        </div>
+    </div>
+</div>
+    <!-- PARTNARS End -->
+
+
+
+
+
+
+
+
+
+<!-- Footer Start -->
+<div id="contact" class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                <h4 class="text-light mb-4">HEADQUARTERS:</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> 2 El Obour Buildings, Salah Salem, Misr Al Gadida, Cairo, Egypt</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+20 2 2614898</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+20 2 2614876</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@carismalogistics.com</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>secretary@carismalogistics.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://api.whatsapp.com/send?phone=201063689168"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/CARISMAEGYPT/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/carisma_egypt"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/mr-mohamed-adel-35162284/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center text-lg-start mb-4 mb-lg-0">
+                <h4 class="text-light mb-4">Services</h4>
+                <p class="btn btn-link" href="">Air Freight</p>
+                <p class="btn btn-link" href="">Sea Freight</p>
+                <p class="btn btn-link" href="">Inland Freight</p>
+                <p class="btn btn-link" href="">Customs Clearance</p>
+                <p class="btn btn-link" href="">Import/Export</p>
+                <p class="btn btn-link" href="">Trading</p>
+
+            </div>
+            <div class="col-lg-4 col-md-6 text-center text-lg-start mb-4 mb-lg-0">
+                <h4 class="text-light mb-4">Location Map</h4>
+                <div style="width: 100%; height: 400px; position: relative;">
+                    <iframe src="https://maps.google.com/maps?q=carismalogistics&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Footer End -->
+<!-- Back to Top -->
+<a href="#" class=" back-to-top">
+    <img src="img/scrolltotop.png" alt="Back to Top" style="width: 70px; height: 70px;">
+</a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
